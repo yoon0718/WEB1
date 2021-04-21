@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+
+        </title>
+        <style>
+            #grid{
+                border:5px solid pink;
+                display:grid;
+                grid-template-columns: 150px 1fr;/*1fr이란 150px을 제외한 나머지를 전부 사용한다는 뜻*/
+            }
+            div{
+                border:5px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>NAVIGATION</div><!-- div태그는 화면 전체를 사용하기에 저절로 enter처리-->
+            <div>ARTUCLE</div> <!--똑같은 목적의 span태그도 있음--><!--둘다 아무 의미없는 태그-->
+        </div>
+        
+    </body>
+</html>
