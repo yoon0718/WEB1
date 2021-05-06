@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>
-
+            WEB1 - JavaScript
         </title>
     </head>
     <body>
@@ -14,12 +14,25 @@
         <input type="text" onchange="alert('changed')">
         <input type="text" onkeydown="alert('key down!')">
         
-        <input type="button" value="day" onclick="
-        document.querySelector('body').sytle.backgroundColor='white';
-        document.querySelector('body').style.color='black';">
         <input type="button" value="night" onclick="
-        document.querySelector('body').sytle.backgroundColor='black';
-        document.querySelector('body').style.color='white';">
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+
+        <input type="button" value="night" onclick="
+        if(night){
+            document.querySelector('body').style.backgroundColor='black'
+            document.querySelector('body').style.color='white';
+        }   
+        else{
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+        }
+        ">
         이게 없어서 그런건가
     </body>
 </html>
