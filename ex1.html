@@ -23,16 +23,54 @@
         document.querySelector('body').style.color='black';
         ">
 
-        <input type="button" value="night" onclick="
-        if(night){
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
             document.querySelector('body').style.backgroundColor='black'
             document.querySelector('body').style.color='white';
+            document.querySelector('#night_day').value = 'day';
         }   
         else{
             document.querySelector('body').style.backgroundColor='white';
             document.querySelector('body').style.color='black';
+            document.querySelector('#night_day').value = 'night';
         }
         ">
-        이게 없어서 그런건가
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <h2>JavaScript</h2>
+        <p>
+        JavaScript, often abbreviated as JS, is a high-level, 
+        interpreted programming language that conforms to the 
+        ECMAScript specification. It is a programming language 
+        that is characterized as dynamic, weakly typed, prototype-based 
+        and multi-paradigm.[1]Alongside HTML and CSS, JavaScript 
+        is one of the core technologies of the World Wide Web. 
+        JavaScript enables interactive web pages and is an essential 
+        part of web applications. The vast majority of websites use it, 
+        and major web browsers have a dedicated JavaScript engine 
+        to execute it.[2]This course comprises 16 lessons on 
+        JavaScript programming. Each lesson includes a combination 
+        of Wikipedia and Internet-based readings, YouTube videos, 
+        and hands-on learning activities. The entire course can be 
+        downloaded in book form by selecting Download Learning Guide 
+        in the sidebar.
+        </p>
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor='black'
+            target.style.color='white';
+            this.value = 'day';
+        }   
+        else{
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+        }
+        ">
     </body>
 </html>
