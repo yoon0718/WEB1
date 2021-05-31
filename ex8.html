@@ -8,34 +8,36 @@
     </head>
     
     <body>
-        <h1>Object</h1>
-        <h2>create</h2>
+        <h1>function</h1>
+        <h2>Basic</h2>
         <script>
-            var coworkers = {
-                "programmer" : "egoing",
-                "designer" : "leezche"
-            };
-            document.write("programmer : "+coworkers.programmer+"<br>");
-            document.write("designer : "+coworkers.designer+"<br>");
-            coworkers.bookeeper = "duru";
-            document.write("bookeeper : "+coworkers.bookeeper+"<br>");
-            coworkers["data scientist"] = "teaho";
-            document.write("data scientist : "+coworkers["data scientist"]+"<br>");
-        </script>
-        <h2>Iterate</h2>
-        <script>
-            for(var key in coworkers){
-                document.write(key+' : '+coworkers[key]+'<br>');
+            function two(){
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');
             }
         </script>
-        <h2>Property & method</h2>
+        <ul>
+            <script>
+                document.write('<li>1</li>');
+                two();
+                document.write('<li>3</li>');
+            </script>
+        </ul>
+        <h2>Parameter & Argument</h2>
         <script>
-            coworkers.showAll = function(){
-                for(var key in this){
-                    document.write(key+' : '+this[key]+'<br>');
-                }
+            function onePlusOne(){
+                document.write(1+1+'<br>');
             }
-            coworkers.showAll();
+            onePlusOne();
         </script>
+        <script>
+            function sum(left, right){
+                document.write(left+right+'<br>');
+            }
+            sum(1, 2);
+            sum(2, 5);
+            
+        </script>
+        <h2>Return</h2>
     </body>
 </html>
